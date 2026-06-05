@@ -1,5 +1,6 @@
 # rag.py — RAG pipeline: filing ingestion, vectorstore, and QA chain.
 
+import os
 import streamlit as st
 from bs4 import BeautifulSoup
 from langchain_text_splitters import RecursiveCharacterTextSplitter

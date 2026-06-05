@@ -1,5 +1,6 @@
 # app.py — Streamlit UI. All data, analytics, and RAG logic live in separate modules.
 
+import os
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
@@ -39,7 +40,6 @@ with st.sidebar:
     api_key = st.text_input("OpenAI API Key", type="password", placeholder="sk-...")
     st.markdown("---")
     st.markdown("### 📁 Data Sources")
-    import os
     for company, info in COMPANIES.items():
         exists = os.path.exists(info["file"])
         st.markdown(f"{'✅' if exists else '❌'} **{company}** ({info['ticker']})")
