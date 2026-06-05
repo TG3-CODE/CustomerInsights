@@ -64,4 +64,4 @@ The system prompt instructs the model to say "I cannot find this information in 
 | Hallucination rate (unanswerable Qs) | 0/3 (0%) |
 | Citation accuracy | High — all answers cite filing + line |
 
-See the Evaluation tab for the full question set and per-question notes.
+See `evaluation.md` for the full question set, results table, and interpretation. The Evaluation tab in the app shows the same data interactively.

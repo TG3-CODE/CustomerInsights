@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 from data import COMPANIES, EVAL_QUESTIONS
-from analytics import compute_margins, compute_yoy_growth, compute_fcf, compute_cagr, compute_debt_to_assets, compute_debt_to_equity
+from analytics import compute_margins, compute_yoy_growth, compute_fcf, compute_cagr, compute_debt_to_equity
 from rag import build_vectorstore, get_qa_chain
 from parser import extract
 
@@ -139,7 +139,6 @@ with tab2:
     m     = compute_margins(d)
     fcf   = compute_fcf(d)
     yoy   = compute_yoy_growth(d["revenue"])
-    d2a   = compute_debt_to_assets(d)
     dte   = compute_debt_to_equity(d)
 
     # CAGR summary
